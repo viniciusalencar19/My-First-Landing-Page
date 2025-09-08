@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Landing Page Incrível</title>
+    
+    <!-- Importação do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Importação da fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Configuração personalizada do Tailwind para usar a fonte 'Inter'
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilo para garantir que o scroll suave funcione em todos os navegadores */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- CABEÇALHO -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-blue-600">SuaMarca</a>
+            
+            <!-- Links de Navegação (Desktop) -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#beneficios" class="text-gray-600 hover:text-blue-600 transition duration-300">Benefícios</a>
+                <a href="#depoimentos" class="text-gray-600 hover:text-blue-600 transition duration-300">Depoimentos</a>
+                <a href="#preco" class="text-gray-600 hover:text-blue-600 transition duration-300">Preço</a>
+            </div>
+            
+            <!-- Botão CTA no Cabeçalho -->
+            <a href="#cta" class="hidden md:block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Comece Agora</a>
+
+            <!-- Menu Hambúrguer (Mobile) -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Menu Mobile (oculto por padrão) -->
+        <div id="menu-mobile" class="hidden md:hidden bg-white">
+            <a href="#beneficios" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">Benefícios</a>
+            <a href="#depoimentos" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">Depoimentos</a>
+            <a href="#preco" class="block py-2 px-6 text-sm text-gray-600 hover:bg-blue-50">Preço</a>
+            <a href="#cta" class="block py-2 px-6 text-sm bg-blue-100 text-blue-700 font-semibold">Comece Agora</a>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO HERO (PRINCIPAL) -->
+        <section class="bg-white py-20 lg:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Resolva [o principal problema] com a nossa solução inovadora</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Nossa plataforma oferece a maneira mais simples e eficiente de [alcançar um objetivo], permitindo que você foque no que realmente importa.</p>
+                <a href="#cta" class="bg-blue-600 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 inline-block">Quero testar gratuitamente!</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE BENEFÍCIOS -->
+        <section id="beneficios" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Tudo que você precisa, em um só lugar</h2>
+                    <p class="text-gray-600 mt-2">Descubra os recursos que vão transformar a sua rotina.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Benefício 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <!-- Ícone SVG -->
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Eficiência Máxima</h3>
+                        <p class="text-gray-600">Economize tempo e aumente sua produtividade com nossas ferramentas automatizadas.</p>
+                    </div>
+                    <!-- Benefício 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Interface Intuitiva</h3>
+                        <p class="text-gray-600">Navegue com facilidade em uma plataforma projetada para ser simples e poderosa.</p>
+                    </div>
+                    <!-- Benefício 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:-translate-y-2 transition duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Segurança Garantida</h3>
+                        <p class="text-gray-600">Seus dados estão protegidos com as tecnologias de segurança mais avançadas do mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO DE DEPOIMENTOS -->
+        <section id="depoimentos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Amado por milhares de clientes</h2>
+                    <p class="text-gray-600 mt-2">Veja o que estão dizendo sobre a nossa solução.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Depoimento 1 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                        <p class="text-gray-600 italic mb-6">"Isso mudou completamente a forma como trabalhamos. Em apenas um mês, nossa produtividade aumentou em 40%. Não consigo mais imaginar minha rotina sem esta ferramenta."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=JS" alt="Foto de Joana Silva">
+                            <div>
+                                <p class="font-bold">Joana Silva</p>
+                                <p class="text-sm text-gray-500">CEO, Empresa Criativa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                        <p class="text-gray-600 italic mb-6">"O suporte é incrível e a plataforma é extremamente fácil de usar. Finalmente encontrei uma solução que atende a todas as minhas necessidades. Recomendo de olhos fechados!"</p>
+                        <div class="flex items-center">
+                             <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/E2E8F0/4A5568?text=MP" alt="Foto de Marcos Pereira">
+                            <div>
+                                <p class="font-bold">Marcos Pereira</p>
+                                <p class="text-sm text-gray-500">Gerente de Projetos, Agência Tech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PREÇO -->
+        <section id="preco" class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Um plano perfeito para você</h2>
+                    <p class="text-gray-600 mt-2">Escolha a opção que melhor se adapta às suas necessidades.</p>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-blue-600 max-w-md w-full">
+                        <h3 class="text-2xl font-bold text-center">Plano Profissional</h3>
+                        <p class="text-gray-500 text-center mt-2">Ideal para equipes e empresas</p>
+                        <div class="text-center my-8">
+                            <span class="text-5xl font-bold">R$99</span>
+                            <span class="text-gray-500">/mês</span>
+                        </div>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-center"><span class="text-green-500 mr-3">✔</span> Acesso a todos os recursos</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3">✔</span> Usuários ilimitados</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3">✔</span> Suporte prioritário 24/7</li>
+                            <li class="flex items-center"><span class="text-green-500 mr-3">✔</span> Relatórios avançados</li>
+                        </ul>
+                        <a href="#cta" class="w-full text-center mt-8 bg-blue-600 text-white font-bold text-lg px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 inline-block">
+                            Escolher Plano
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO FINAL DE CHAMADA PARA AÇÃO (CTA) -->
+        <section id="cta" class="bg-blue-600 text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pronto para transformar seu negócio?</h2>
+                <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">Junte-se a milhares de empresas que já estão otimizando seus resultados. Comece seu teste gratuito, sem compromisso.</p>
+                <a href="#" class="bg-white text-blue-600 font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-100 transition duration-300 inline-block">Começar gratuitamente agora</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- RODAPÉ -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 SuaMarca. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT PARA INTERATIVIDADE -->
+    <script>
+        // Funcionalidade do Menu Hambúrguer
+        const menuBtn = document.getElementById('menu-btn');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        menuBtn.addEventListener('click', () => {
+            menuMobile.classList.toggle('hidden');
+        });
+
+        // Fechar o menu mobile ao clicar em um link
+        const mobileLinks = document.querySelectorAll('#menu-mobile a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuMobile.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

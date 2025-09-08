@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Landing Page</title>
+    
+    <!-- Importação de uma fonte simples do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- O CSS (estilo) vai aqui dentro. É mais fácil para um iniciante ter tudo em um só lugar. -->
+    <style>
+        /* Reseta margens e paddings padrão do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Poppins', sans-serif; /* Define a fonte importada */
+            background-color: #f0f2f5; /* Cor de fundo suave */
+            color: #333; /* Cor principal do texto */
+            line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+        }
+
+        /* Um container para centralizar o conteúdo */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto; /* Truque para centralizar horizontalmente */
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        header h1 {
+            color: #2a7ae2;
+            font-size: 24px;
+        }
+
+        /* Estilo da Seção Principal (Hero) */
+        .hero {
+            background-color: #2a7ae2;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        /* Estilo do botão principal (Call to Action - CTA) */
+        .cta-button {
+            background-color: #ffc107;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none; /* Remove o sublinhado do link */
+            padding: 15px 30px;
+            border-radius: 5px; /* Bordas arredondadas */
+            display: inline-block; /* Permite definir padding e margin */
+        }
+
+        /* Estilo da Seção de Benefícios */
+        .beneficios {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .beneficios h3 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .beneficios-lista {
+            list-style: none; /* Remove os pontinhos da lista */
+            font-size: 18px;
+        }
+
+        .beneficios-lista li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo do Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container">
+            <h1>MinhaMarca</h1>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO HERO (PRINCIPAL) -->
+        <section class="hero">
+            <div class="container">
+                <h2>A Solução Perfeita Para Seu Projeto</h2>
+                <p>Descubra como nossa ferramenta pode simplificar seu trabalho e aumentar sua produtividade.</p>
+                <a href="#" class="cta-button">Comece a Usar Agora</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE BENEFÍCIOS -->
+        <section class="beneficios">
+            <div class="container">
+                <h3>Por que nos escolher?</h3>
+                <ul class="beneficios-lista">
+                    <li>✔️ Fácil de usar e aprender</li>
+                    <li>✔️ Design limpo e moderno</li>
+                    <li>✔️ Suporte amigável</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Primeiro Projeto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
