@@ -33,5 +33,3 @@ Como Personalizar
 Textos: Altere o conteúdo dentro das tags do HTML, como <h1> e <p>.
 
 Cores e Fontes: Modifique as propriedades dentro da tag <style> no arquivo index.html.
-
-Este projeto é um modelo para trabalhos da faculdade e para praticar o básico de front-end.
