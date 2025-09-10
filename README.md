@@ -1,4 +1,4 @@
-Minha Primeira Landing Page
+Minha Primeira Landing Page<p>
 Este é um projeto de uma landing page simples, feito como um exercício para a faculdade. O objetivo é mostrar a estrutura básica de uma página de apresentação usando apenas HTML e CSS, sem frameworks.
 
 Sobre o Projeto
