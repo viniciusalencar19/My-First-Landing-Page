@@ -30,6 +30,6 @@ Vá até a pasta do projeto e abra o arquivo index.html em um navegador como o G
 A página vai aparecer no navegador.
 
 Como Personalizar
-Textos: Altere o conteúdo dentro das tags do HTML, como <h1> e <p>.
+Textos: Altere o conteúdo dentro das tags do HTML, como < h1 > e <  p  >.
 
 Cores e Fontes: Modifique as propriedades dentro da tag <style> no arquivo index.html.
